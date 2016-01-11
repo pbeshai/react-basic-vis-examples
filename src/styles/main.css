@@ -1,0 +1,26 @@
+body {
+  background: #fff;
+  color: #333;
+  padding: 10px;
+}
+
+h4 {
+  margin: 0;
+}
+
+.chart {
+  margin: 10px 0;
+  border: 1px solid #aaa;
+}
+
+text {
+  dominant-baseline: hanging;
+}
+
+.highlight {
+  pointer-events: none;
+}
+
+.example {
+  margin-bottom: 800px;
+}
