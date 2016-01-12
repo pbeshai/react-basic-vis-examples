@@ -4,6 +4,7 @@ using [React](https://facebook.github.io/react/) and
 [D3.js](http://d3js.org/). The project base
 was generated using [Yeoman](http://yeoman.io/)'s [react-webpack generator](https://github.com/newtriks/generator-react-webpack).
 
+**Demo** http://pbeshai.github.io/react-basic-vis-examples/
 
 ## Installation
 
