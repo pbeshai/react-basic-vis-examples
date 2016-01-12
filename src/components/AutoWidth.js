@@ -27,13 +27,13 @@ const AutoWidth = React.createClass({
     }
   },
 
-  // Returns true if width prop is auto and the dom node width is different than the stored state width
+  // Returns true the dom node width is different than the stored state width
   _shouldUpdateWidth() {
     const domWidth = this._getResizeDOMNode().offsetWidth;
     return this.state.width !== domWidth;
   },
 
-  // When we update width, we need to recalculate the chart components
+  // Call set state to update the width so it starts an update of the child component
   _updateWidth() {
     this.setState({
       width: this._getResizeDOMNode().offsetWidth
