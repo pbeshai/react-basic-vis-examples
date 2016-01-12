@@ -10,6 +10,7 @@ import VisExample5 from './VisExample5';
 import VisExample6 from './VisExample6';
 import VisExample7 from './VisExample7';
 import VisExample8 from './VisExample8';
+import AutoWidth from './AutoWidth';
 
 // CSS via webpack
 require('normalize.css');
@@ -74,6 +75,12 @@ const VisExampleApp = React.createClass({
         <div className='example'>
           <h4>Example 8 - Highlight Behaviour (optimized)</h4>
           <VisExample8 width={400} height={200} data={data} />
+        </div>
+        <div className='example'>
+          <h4>Example 9 - Highlight Behaviour (optimized, auto width)</h4>
+          <AutoWidth>
+            <VisExample8 height={400} data={data} />
+          </AutoWidth>
         </div>
       </div>
     );

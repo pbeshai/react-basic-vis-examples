@@ -44,7 +44,7 @@ const VisExample5 = React.createClass({
     const rDomain = d3.extent(points, d => d.r);
     const numCols = xDomain[1];
     const r = d3.scale.linear().domain(rDomain)
-      .range([0, innerWidth / numCols]);
+      .range([0, (innerWidth / numCols) / 2]);
 
     // create color scale (colors from http://colorbrewer2.org)
     const color = d3.scale.linear().domain([0.3, 0.45, 0.6])

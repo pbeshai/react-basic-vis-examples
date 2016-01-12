@@ -48,7 +48,7 @@ const VisExample7 = React.createClass({
     const rDomain = d3.extent(points, d => d.r);
     const numCols = xDomain[1];
     const r = d3.scale.linear().domain(rDomain)
-      .range([0, (innerWidth / numCols)]);
+      .range([0, (innerWidth / numCols) / 2]);
 
     // create color scale (colors from http://colorbrewer2.org)
     const color = d3.scale.linear().domain([0.3, 0.45, 0.6])
@@ -97,7 +97,7 @@ const VisExample7 = React.createClass({
   render() {
     const chartComponents = this._chartComponents();
     const { points, width, height, x, y, r, color } = chartComponents;
-    const maxRadius = r.range()[1] / 2;
+    const maxRadius = r.range()[1];
     return (
       <svg width={width} height={height} className='chart'>
         <g className='points'>
