@@ -79,7 +79,7 @@ const VisExample8 = React.createClass({
   propTypes: {
     data: React.PropTypes.array.isRequired,
     height: React.PropTypes.number.isRequired,
-    width: React.PropTypes.number.isRequired
+    width: React.PropTypes.number // do not put isRequired to prevent render on null
   },
 
   getInitialState() {
@@ -168,6 +168,10 @@ const VisExample8 = React.createClass({
   render() {
     const { chartComponents } = this.state;
     const { width, height } = chartComponents;
+
+    if (!width) {
+      return null;
+    }
 
     return (
       <svg width={width} height={height} className='chart'>

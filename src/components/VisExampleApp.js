@@ -10,7 +10,7 @@ import VisExample5 from './VisExample5';
 import VisExample6 from './VisExample6';
 import VisExample7 from './VisExample7';
 import VisExample8 from './VisExample8';
-import AutoWidth from './AutoWidth';
+import AutoWidth from 'react-auto-width';
 
 // CSS via webpack
 require('normalize.css');

@@ -32,6 +32,7 @@
     "jshint-loader": "~0.8.0",
     "jsxhint-loader": "~0.2.0",
     "load-grunt-tasks": "~0.6.0",
+    "react-auto-width": "^0.1.0",
     "react-hot-loader": "^1.0.7",
     "style-loader": "~0.8.0",
     "url-loader": "~0.5.5",
